@@ -11,13 +11,6 @@ public class Invoice {
     private String deliveredBy;
     private List<InvoiceLineRequest> invoiceLines;
 
-    public static class InvoiceLineRequest {
-        private String productName;
-        private int quantity;
-        private double price;
-
-    }
-
 	public LocalDateTime getDate() {
 		return date;
 	}
