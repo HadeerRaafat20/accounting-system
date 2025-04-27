@@ -1,0 +1,61 @@
+package Controller.dto;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public class Invoice {
+    private LocalDateTime date;
+    private String providerName;
+    private String providerAddress;
+    private double paid;
+    private String deliveredBy;
+    private List<InvoiceLineRequest> invoiceLines;
+
+	public LocalDateTime getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDateTime date) {
+		this.date = date;
+	}
+
+	public String getProviderName() {
+		return providerName;
+	}
+
+	public void setProviderName(String providerName) {
+		this.providerName = providerName;
+	}
+
+	public String getProviderAddress() {
+		return providerAddress;
+	}
+
+	public void setProviderAddress(String providerAddress) {
+		this.providerAddress = providerAddress;
+	}
+
+	public double getPaid() {
+		return paid;
+	}
+
+	public void setPaid(double paid) {
+		this.paid = paid;
+	}
+
+	public String getDeliveredBy() {
+		return deliveredBy;
+	}
+
+	public void setDeliveredBy(String deliveredBy) {
+		this.deliveredBy = deliveredBy;
+	}
+
+	public List<InvoiceLineRequest> getInvoiceLines() {
+		return invoiceLines;
+	}
+
+	public void setInvoiceLines(List<InvoiceLineRequest> invoiceLines) {
+		this.invoiceLines = invoiceLines;
+	}
+}
